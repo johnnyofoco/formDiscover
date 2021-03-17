@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: coral;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 500px;
+            border: darkblue 5px solid;
+
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .btn {
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Preencha o formulário:</h1>
+    <form id="dados" action="#" method="GET">
+        <fieldset form="dados" name="dados-pessoais">
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Nome Completo">
+
+            <label for="email">e-Mail: </label>
+            <input type="email" id="email" placeholder="eMail">
+        </fieldset>
+
+        <div class="btn">
+            <button autofocus type="submit" form="dados">Enviar</button>
+            <button type="reset" form="dados">Limpar</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
